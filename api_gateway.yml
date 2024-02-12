@@ -5,10 +5,10 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: welcome-api
-        uri: lb://WELCOME-API
+      - id: plans-api
+        uri: lb://PLANS-API
         predicates:
-        - Path=/welcome
+        - Path=/plans
       - id: greet-api
         uri: lb://GREET-API
         predicates:
