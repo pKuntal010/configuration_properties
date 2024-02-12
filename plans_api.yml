@@ -1,4 +1,8 @@
 spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090/
   datasource:
     password: root
     url: jdbc:mysql://localhost:3306/plans_db
@@ -10,3 +14,5 @@ spring:
 
 server:
   port: 8585
+  
+  
