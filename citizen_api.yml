@@ -1,4 +1,8 @@
 spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090/
   datasource:
     url: jdbc:mysql://localhost:3306/citizen_db
     username: root
@@ -10,3 +14,10 @@ spring:
 
 server:
   port: 8586
+  
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
