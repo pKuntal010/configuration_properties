@@ -3,37 +3,27 @@ spring:
     admin:
       client:
         url: http://localhost:9090/
+ 
   datasource:
     url: jdbc:mysql://localhost:3306/citizen_db
     username: root
     password: root
+    
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     
-    
   mail:
     host: smtp.gmail.com
-    password: raiy iiyd xazi bkqu
     port: 587
+    username: kuntalpaul2015joint@gmail.com
+    password: raiy iiyd xazi bkqu
     properties:
       mail:
         smtp:
           auth: true
-      smtp:
-        starttls:
-          enable: true
-    username: kuntalpaul2015joint@gmail.com
-    
-
-
-server:
-  port: 8586
-  
-  
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+      
+          starttls:
+            enable: true
+        
