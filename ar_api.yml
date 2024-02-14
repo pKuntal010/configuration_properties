@@ -1,0 +1,19 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090/
+ 
+  datasource:
+    url: jdbc:mysql://localhost:3306/ar_db
+    username: root
+    password: root
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+        
+        
+server:
+  port: 8567
